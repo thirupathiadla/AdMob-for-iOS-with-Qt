@@ -45,7 +45,7 @@ static void (*interstitialAdClosedCallback)() = nullptr;
 + (void)initializeAdMob {
     
     // Enable Test Device for Testing
-    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[@"Simulator"];
+    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[@"Simulator"]; //replace with your id
 
     [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
     
